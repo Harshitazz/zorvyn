@@ -303,11 +303,7 @@ export default function RecordsPage() {
                   min="0"
                   required
                   value={amount}
-                  onChange={(e) => {
-                    const val = e.target.value;
-                    if (val === "") setAmount("");
-                    else if (/^\\d+(\\.\\d{0,2})?$/.test(val)) setAmount(val);
-                  }}
+                  onChange={(e) => setAmount(e.target.value)}
                   placeholder="0.00"
                 />
                 <small className="muted" style={{ marginTop: 4, display: "block" }}>Max 2 decimal places</small>
