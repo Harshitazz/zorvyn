@@ -1,0 +1,42 @@
+# --- General / OS ---
+.DS_Store
+.vscode/
+.idea/
+*.log
+.env
+.env*.local
+
+# --- Next.js / Node.js (Frontend) ---
+node_modules/
+.next/
+out/
+build/
+dist/
+.pnp
+.pnp.js
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.turbo/
+next-env.d.ts
+
+# --- FastAPI / Python (Backend) ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.pytest_cache/
+.coverage
+htmlcov/
+*.sqlite3
+
+# --- Testing / Documentation ---
+/coverage
+docs/_build/
